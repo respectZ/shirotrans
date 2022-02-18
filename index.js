@@ -12,7 +12,6 @@ let setting;
 let mouse1, mouse2;
 let mainWindow, deepLWindow;
 let text_furigana = "";
-let DIM = robot.getScreenSize();
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -25,9 +24,9 @@ function initHotkeys() {
 
     globalShortcut.register(setting.hotkeys.setarea, () => {
         if(!mouse1) {
-            mouse1 = captureMouse(DIM)
+            mouse1 = captureMouse(setting.general.resolution)
         } else {
-            mouse2 = captureMouse(DIM)
+            mouse2 = captureMouse(setting.general.resolution)
         }
     })
     globalShortcut.register(setting.hotkeys.resetarea, () => {
