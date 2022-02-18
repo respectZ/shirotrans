@@ -1,0 +1,12 @@
+if want add setting key & value:
+
+scripts/setting.js
+init here
+
+html/script.js
+loadsetting
+savesetting
+initsetting
+
+html/pages/{category}.html
+add class setting-item, add element

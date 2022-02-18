@@ -1,0 +1,21 @@
+#jp {
+    font-size: 36px;
+}
+#tr {
+    font-size: 36px;
+}
+.sidebar-left {
+    overflow: auto;
+}
+.modal-content {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 57vh;
+}
+.setting-link {
+    color: inherit;
+}
+.setting-active {
+    background-color: #222;
+    color: white;
+}

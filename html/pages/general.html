@@ -1,0 +1,32 @@
+<form class="uk-form-stacked">
+
+    <div class="uk-margin">
+        <label class="uk-form-label" for="setting-general-mode">Mode</label>
+        <div class="uk-form-controls">
+            <select class="uk-select setting-item" id="setting-general-mode">
+                <option value="0">Manual Area</option>
+                <option value="1">Area Behind Window</option>
+                <option value="2" disabled>Auto Popup</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="uk-margin">
+        <label class="uk-form-label">Screen Resolution</label>
+        <div class="uk-child-width-1-2" uk-grid>
+            <div class="uk-form-controls">
+                <label class="uk-form-label" for="setting-resolution-width">Width</label>
+                <input class="uk-input setting-item" id="setting-general-resolution-width" type="text" placeholder="Width">
+            </div>
+            <div class="uk-form-controls">
+                <label class="uk-form-label" for="setting-resolution-height">Height</label>
+                <input class="uk-input setting-item" id="setting-general-resolution-height" type="text" placeholder="Height">
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+        <label><input class="uk-checkbox setting-item" type="checkbox" id="setting-general-alwaysontop" checked> Always on top</label>
+    </div>
+
+</form>

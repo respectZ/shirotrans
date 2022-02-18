@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>node-ocr</title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="uk-cover-container">
+        <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+        
+                <ul class="uk-navbar-nav">
+                    <li uk-toggle="target: #modal-setting"><a href="#">Setting</a></li>
+                </ul>
+        
+            </div>
+        </nav>
+        <div class="uk-container uk-container-expand uk-margin-top">
+            <p id="jp" style="white-space: pre-line;">
+                <ruby>世界<rp>(</rp><rt>せかい</rt><rp>)</rp></ruby>が<ruby>終<rp>(</rp><rt>お</rt><rp>)</rp></ruby>わるまでに
+            </p>
+            <p id="tr" style="white-space: pre-line;">
+                Before the world ends.
+            </p>
+        </div>
+        
+
+        <!-- This is the modal -->
+        <div id="modal-setting" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body" style="overflow: hidden;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <h2 class="uk-modal-title">Setting</h2>
+                <hr>
+                <div uk-grid>
+                    <div class="uk-width-1-3 modal-content">
+                        <ul class="uk-list uk-list-divider" id="setting-category">
+                            <a href="#" class="setting-link"><li class="uk-margin-remove uk-padding-small setting-active">General</li></a>
+                            <a href="#" class="setting-link"><li class="uk-margin-remove uk-padding-small">Translation</li></a>
+                            <a href="#" class="setting-link"><li class="uk-margin-remove uk-padding-small">Hotkeys</li></a>
+                            <a href="#" class="setting-link"><li class="uk-margin-remove uk-padding-small">Text</li></a>
+                        </ul>
+                    </div>
+                    <div class="uk-width-expand">
+                        <div class="uk-card uk-card-default uk-card-body modal-content" id="setting-content">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
